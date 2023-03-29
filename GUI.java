@@ -12,7 +12,7 @@ public class GUI extends JPanel {
     private JLabel tituloTemp;
     private JTextField jcomp7;
     private JLabel jcomp8;
-    private JPasswordField jcomp9;
+    private JTextField jcomp9;
     private JLabel jcomp10;
 
     public GUI() {
@@ -28,7 +28,7 @@ public class GUI extends JPanel {
         tituloTemp = new JLabel ("Temperatura");
         jcomp7 = new JTextField (5);
         jcomp8 = new JLabel ("Humedad");
-        jcomp9 = new JPasswordField (5);
+        jcomp9 = new JTextField (5);
         jcomp10 = new JLabel ("Estado");
 
         //adjust size and set layout
@@ -59,13 +59,5 @@ public class GUI extends JPanel {
         jcomp9.setBounds (365, 285, 100, 25);
         jcomp10.setBounds (365, 260, 100, 25);
     }
-
-
-    public static void main (String[] args) {
-        JFrame frame = new JFrame ("CÓDIGO INTERFAZ SISTEMA");
-        frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add (new GUI());
-        frame.pack();
-        frame.setVisible (true);
-    }
+   
 }
