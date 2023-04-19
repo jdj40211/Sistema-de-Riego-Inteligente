@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=SistemaRiego
+comment1.params=
+comment1.target=SistemaRiego()
+comment10.params=
+comment10.target=float\ getNvlTanque()
+comment2.params=nvlt
+comment2.target=void\ setNvlTanque(float)
+comment3.params=temp
+comment3.target=void\ setTemperatura(float)
+comment4.params=
+comment4.target=float\ getTemperatura()
+comment5.params=humedadact
+comment5.target=void\ setHumedadAct(float)
+comment6.params=
+comment6.target=float\ getHumedadAct()
+comment7.params=n
+comment7.target=Planta\ buscarNombre(java.lang.String)
+comment8.params=p
+comment8.target=void\ agregarPlanta(Planta)
+comment9.params=
+comment9.target=java.util.ArrayList\ getListaP()
+numComments=11

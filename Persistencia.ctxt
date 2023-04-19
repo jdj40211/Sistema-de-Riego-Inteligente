@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Persistencia
+comment1.params=
+comment1.target=Persistencia()
+comment2.params=
+comment2.target=void\ crearPlantas()
+comment3.params=
+comment3.target=void\ leerPLantas()
+comment4.params=
+comment4.target=SistemaRiego\ getS1()
+numComments=5

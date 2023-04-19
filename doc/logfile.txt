@@ -1,0 +1,30 @@
+Class documentation
+<---- javadoc command: ---->
+Z:\Program Files\BlueJ\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+17
+-classpath
+Z:\Program Files\BlueJ\lib\bluejcore.jar;Z:\Program Files\BlueJ\lib\junit-jupiter-5.5.2.jar;Z:\Program Files\BlueJ\lib\junit-jupiter-api-5.5.2.jar;Z:\Program Files\BlueJ\lib\junit-jupiter-engine-5.5.2.jar;Z:\Program Files\BlueJ\lib\junit-jupiter-migrationsupport-5.5.2.jar;Z:\Program Files\BlueJ\lib\junit-jupiter-params-5.5.2.jar;Z:\Program Files\BlueJ\lib\junit-platform-commons-1.5.2.jar;Z:\Program Files\BlueJ\lib\junit-platform-console-1.5.2.jar;Z:\Program Files\BlueJ\lib\junit-platform-console-standalone-1.5.2.jar;Z:\Program Files\BlueJ\lib\junit-platform-engine-1.5.2.jar;Z:\Program Files\BlueJ\lib\junit-platform-launcher-1.5.2.jar;Z:\Program Files\BlueJ\lib\junit-platform-reporting-1.5.2.jar;Z:\Program Files\BlueJ\lib\junit-platform-runner-1.5.2.jar;Z:\Program Files\BlueJ\lib\junit-platform-suite-api-1.5.2.jar;Z:\Program Files\BlueJ\lib\junit-platform-testkit-1.5.2.jar;Z:\Program Files\BlueJ\lib\junit-quickcheck-core-0.9.jar;Z:\Program Files\BlueJ\lib\junit-vintage-engine-5.5.2.jar;Z:\Program Files\BlueJ\lib\hamcrest-core-1.3.jar;Z:\Program Files\BlueJ\lib\hamcrest-library-1.3.jar;Z:\Program Files\BlueJ\lib\lang-stride.jar;Z:\Program Files\BlueJ\lib\javafx\lib\javafx.base.jar;Z:\Program Files\BlueJ\lib\javafx\lib\javafx.controls.jar;Z:\Program Files\BlueJ\lib\javafx\lib\javafx.fxml.jar;Z:\Program Files\BlueJ\lib\javafx\lib\javafx.graphics.jar;Z:\Program Files\BlueJ\lib\javafx\lib\javafx.media.jar;Z:\Program Files\BlueJ\lib\javafx\lib\javafx.properties.jar;Z:\Program Files\BlueJ\lib\javafx\lib\javafx.swing.jar;Z:\Program Files\BlueJ\lib\javafx\lib\javafx.web.jar;Z:\Proyectos\Proyectos-java\Sistema-Riego
+-d
+Z:\Proyectos\Proyectos-java\Sistema-Riego\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+Z:\Proyectos\Proyectos-java\Sistema-Riego\Persistencia.java
+<---- end of javadoc command ---->
+Loading source file Z:\Proyectos\Proyectos-java\Sistema-Riego\Persistencia.java...
+Constructing Javadoc information...
+Z:\Proyectos\Proyectos-java\Sistema-Riego\SistemaRiego.java:28: error: illegal start of expression
+            if(){
+               ^
+1 error

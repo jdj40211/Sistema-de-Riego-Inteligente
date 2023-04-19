@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Planta
+comment1.params=name\ humedad\ aguaS
+comment1.target=Planta(java.lang.String,\ float,\ float)
+comment2.params=
+comment2.target=Planta()
+comment3.params=
+comment3.target=java.lang.String\ getNombre()
+comment4.params=
+comment4.target=float\ getHumedadIdeal()
+comment5.params=
+comment5.target=float\ getAguaSemanal()
+numComments=6

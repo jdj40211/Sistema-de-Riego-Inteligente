@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Procesamiento
+comment1.params=
+comment1.target=Procesamiento()
+comment2.params=actual\ necesario
+comment2.target=boolean\ compararTanque(SistemaRiego,\ Planta)
+comment3.params=actual\ ideal
+comment3.target=boolean\ compararHumedad(float,\ float)
+comment4.params=actual\ ideal
+comment4.target=boolean\ compararHumedad(float,\ Planta)
+comment5.params=
+comment5.target=Persistencia\ getp1()
+numComments=6
