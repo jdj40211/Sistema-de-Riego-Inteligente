@@ -73,36 +73,36 @@ public class Interfaz extends JPanel {
                 if (cajaPlantas.getSelectedItem().equals("Papa")){
                 Planta papa = S2.buscarNombre("Papa");
                 String hum = cajaHumedadActual.getText();
-                Float humedad = Float.parseFloat(hum);
-                System.out.println(Float.toString(papa.getHumedadIdeal()));
+                float humedad = Float.parseFloat(hum);
                 cajaHumedadIdeal.setText(Float.toString(papa.getHumedadIdeal()));
-                cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
-                System.out.println(Procesamiento.compararHumedad(humedad, papa));
-                if (Procesamiento.compararHumedad(humedad, papa)){
-                    cajaEstado.setText("Humedad insuficiente");
-                    if(Procesamiento.compararTanque(S2,papa)){
-                        cajaEstado.setText("Riego Ejecutado");
+                    if (Procesamiento.compararHumedad(humedad, papa)){
+                        cajaEstado.setText("Humedad insuficiente");
+                        if(Procesamiento.compararTanque(S2,papa)){
+                            cajaEstado.setText("Riego Ejecutado");
+                            cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
+                        }
+                        else{
+                            cajaEstado.setText("No hay suficiente agua en el tanque");
+                            cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
+                        }
                     }
                     else{
-                        cajaEstado.setText("No hay suficiente agua en el tanque");
+                        cajaEstado.setText("Humedad optima");
                     }
-                } else{
-                    cajaEstado.setText("Humedad optima");
-                }
             } else if(cajaPlantas.getSelectedItem().equals("Cebolla")){
                 Planta cebolla = S2.buscarNombre((String)cajaPlantas.getSelectedItem());
                 cajaHumedadIdeal.setText(Float.toString(cebolla.getHumedadIdeal()));
-                cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
                 String hum = cajaHumedadActual.getText();
-                Float humedad = Float.parseFloat(hum);
-                System.out.println(Procesamiento.compararHumedad(humedad, cebolla.getHumedadIdeal()));
+                float humedad = Float.parseFloat(hum);
                  if (Procesamiento.compararHumedad(humedad, cebolla)){
                     cajaEstado.setText("Humedad insuficiente");
                     if(Procesamiento.compararTanque(S2,cebolla)){
                         cajaEstado.setText("Riego Ejecutado");
+                        cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
                     }
                     else{
                         cajaEstado.setText("No hay suficiente agua en el tanque");
+                        cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
                     }
                 } else{
                     cajaEstado.setText("Humedad optima");
@@ -110,31 +110,48 @@ public class Interfaz extends JPanel {
             } else if(cajaPlantas.getSelectedItem().equals("Lechuga")){
                 Planta Lechuga = S2.buscarNombre((String)cajaPlantas.getSelectedItem());
                 cajaHumedadIdeal.setText(Float.toString(Lechuga.getHumedadIdeal()));
-                cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
                 String hum = cajaHumedadActual.getText();
-                Float humedad = Float.parseFloat(hum);
+                float humedad = Float.parseFloat(hum);
                  if (Procesamiento.compararHumedad(humedad, Lechuga)){
                     cajaEstado.setText("Humedad insuficiente");
                     if(Procesamiento.compararTanque(S2,Lechuga)){
                         cajaEstado.setText("Riego Ejecutado");
+                        cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
                     }
                     else{
                         cajaEstado.setText("No hay suficiente agua en el tanque");
+                        cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
                     }
                 } else{
                     cajaEstado.setText("Humedad optima");
                 }
-            }
+
+            }else{
+                    cajaEstado.setText("");
+                    cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
+                    cajaHumedadIdeal.setText("");
+                }
             }
         });
     }
-
-
-    public static void main (String[] args)throws IOException{
-        JFrame frame = new JFrame ("CodigoFinal");
-        frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add (new Interfaz());
-        frame.pack();
-        frame.setVisible (true);
+    public void cajas(Planta actual){
+        String hum = cajaHumedadActual.getText();
+        float humedad = Float.parseFloat(hum);
+        cajaHumedadIdeal.setText(Float.toString(actual.getHumedadIdeal()));
+        if (Procesamiento.compararHumedad(humedad, actual)){
+            cajaEstado.setText("Humedad insuficiente");
+            if(Procesamiento.compararTanque(S2,actual)){
+                cajaEstado.setText("Riego Ejecutado");
+                cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
+            }
+            else{
+                cajaEstado.setText("No hay suficiente agua en el tanque");
+                cajaCapacidadTanque.setText(Float.toString(S2.getNvlTanque()));
+            }
+        } else{
+            cajaEstado.setText("Humedad optima");
+        }
     }
+
+
 }

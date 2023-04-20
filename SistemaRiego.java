@@ -29,10 +29,8 @@ public class SistemaRiego
     public Planta buscarNombre(String n){
         Planta temp = null;
         for(int i = 0; i<listaP.size();i++){
-            if(listaP.get(i).getNombre().equals(n)){
+            if(listaP.get(i).getNombre().equals(n))
                 temp = listaP.get(i);
-                System.out.println(listaP);
-            }
         }
         return temp;
     }

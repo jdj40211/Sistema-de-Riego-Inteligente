@@ -14,7 +14,6 @@ public class Procesamiento
         return false;
     }
      public static boolean compararHumedad(float actual, float ideal){
-         System.out.println(ideal-actual);
         return (ideal-actual)>0.15;
     }
     public static boolean compararHumedad(float actual, Planta ideal){

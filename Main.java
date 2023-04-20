@@ -6,10 +6,10 @@ import java.io.IOException;
 
 public class Main
 {
-    public static void main (String[] args) throws IOException {
-        JFrame frame = new JFrame ("CODIGO INTERFAZ ACTUALIZADA");
+    public static void main (String[] args)throws IOException{
+        JFrame frame = new JFrame ("SISTEMA DE RIEGO");
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-        frame.getContentPane().add (new InterfazSistemaRiego());
+        frame.getContentPane().add (new Interfaz());
         frame.pack();
         frame.setVisible (true);
     }
