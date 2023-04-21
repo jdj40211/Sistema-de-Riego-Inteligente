@@ -7,5 +7,5 @@ comment2.target=void\ crearPlantas()
 comment3.params=
 comment3.target=void\ leerPLantas()
 comment4.params=
-comment4.target=SistemaRiego\ getS1()
+comment4.target=SistemaRiego\ getSistemaBase()
 numComments=5

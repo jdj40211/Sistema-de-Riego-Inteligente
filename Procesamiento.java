@@ -2,9 +2,9 @@ import java.io.IOException;
 
 public class Procesamiento
 {
-    Persistencia p1;
+    Persistencia persistencia;
     public Procesamiento()throws IOException{
-        p1 = new Persistencia();
+        persistencia = new Persistencia();
     }
     public static boolean compararTanque(SistemaRiego actual, Planta necesario){
         if(actual.getNvlTanque() >= necesario.getAguaSemanal()){
@@ -19,7 +19,7 @@ public class Procesamiento
     public static boolean compararHumedad(float actual, Planta ideal){
         return (ideal.getHumedadIdeal()-actual)>0.15;
     }
-    public Persistencia getp1(){
-        return this.p1;
+    public Persistencia getPersistencia(){
+        return this.persistencia;
     }
 }   
