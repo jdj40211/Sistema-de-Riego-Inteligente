@@ -6,7 +6,7 @@ public class SistemaRiego
     private float nvltanque;//litros
     private ArrayList<Planta> listaP;
     public SistemaRiego(){
-        this.listaP = new ArrayList<Planta>();
+        this.listaP = new ArrayList<>();
         this.temperatura = 23.0f;
         this.humedadAct = 0.0f;
         this.nvltanque = 25000.0f;//25m3

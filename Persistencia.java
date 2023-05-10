@@ -15,13 +15,13 @@ public class Persistencia
     public void crearPlantas() throws IOException{
         PrintWriter impPlantas = new PrintWriter(baseplantas);
         impPlantas.println("Cebolla");
-        impPlantas.println("0.6");
+        impPlantas.println("60.0");
         impPlantas.println("3750.0");//153m////8dias
         impPlantas.println("Papa");
-        impPlantas.println("0.9");
+        impPlantas.println("90.0");
         impPlantas.println("2100.0");//10dias
         impPlantas.println("Lechuga");
-        impPlantas.println("0.75");
+        impPlantas.println("75.0");
         impPlantas.println("2700.0");//7 dias
         impPlantas.close();
     }
