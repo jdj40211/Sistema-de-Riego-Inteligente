@@ -9,5 +9,5 @@ comment3.target=boolean\ compararHumedad(float,\ float)
 comment4.params=actual\ ideal
 comment4.target=boolean\ compararHumedad(float,\ Planta)
 comment5.params=
-comment5.target=Persistencia\ getp1()
+comment5.target=Persistencia\ getPersistencia()
 numComments=6

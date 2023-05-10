@@ -81,30 +81,33 @@ public class Entrada extends JPanel {
 
             }else{
                     cajaEstado.setText("");
-                    cajaCapacidadTanque.setText(Float.toString(sistemabasecopia.getNvlTanque()));
                     cajaHumedadIdeal.setText("");
                 }
             }
         });
+        cajaCapacidadTanque.setText(Float.toString(sistemabasecopia.getNvlTanque()));
     }
-    public void cajas(Planta actual){
-        String hum = cajaHumedadActual.getText();
-        float humedad = Float.parseFloat(hum);
-        cajaHumedadIdeal.setText(Float.toString(actual.getHumedadIdeal()));
-        if (Procesamiento.compararHumedad(humedad, actual)){
-            cajaEstado.setText("Humedad insuficiente");
-            if(Procesamiento.compararTanque(sistemabasecopia,actual)){
-                cajaEstado.setText("Riego Ejecutado");
-                cajaCapacidadTanque.setText(Float.toString(sistemabasecopia.getNvlTanque()));
+    public void cajas(Planta actual) {
+        try {
+            String hum = cajaHumedadActual.getText();
+            float humedad = Float.parseFloat(hum);
+            cajaHumedadIdeal.setText(Float.toString(actual.getHumedadIdeal()));
+            if (Procesamiento.compararHumedad(humedad, actual)) {
+                cajaEstado.setText("Humedad insuficiente");
+                if (Procesamiento.compararTanque(sistemabasecopia, actual)) {
+                    cajaEstado.setText("Riego Ejecutado");
+                    cajaCapacidadTanque.setText(Float.toString(sistemabasecopia.getNvlTanque()));
+                } else {
+                    cajaEstado.setText("Llenar tanque");
+                    cajaCapacidadTanque.setText(Float.toString(sistemabasecopia.getNvlTanque()));
+                }
+            } else {
+                cajaEstado.setText("Humedad optima");
             }
-            else{
-                cajaEstado.setText("Llenar tanque");
-                cajaCapacidadTanque.setText(Float.toString(sistemabasecopia.getNvlTanque()));
-            }
-        } else{
-            cajaEstado.setText("Humedad optima");
+        } catch (NumberFormatException u) {
+            cajaHumedadActual.setText("Ingrese un valor primero");
         }
+
+
     }
-
-
 }
